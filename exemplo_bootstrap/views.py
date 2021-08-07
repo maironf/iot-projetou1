@@ -16,6 +16,7 @@ def aprendizado1(request):
     Map = list(map(lambda x: { "Date":  x["created_at"], "Values": x["field1"] }, data["feeds"]))
     feeds = json.dumps(Map)
     print("aprendizado2")
+    #df
     df = pd.read_json(feeds)
 
     #print(df.to_string())
@@ -32,7 +33,8 @@ def aprendizado1(request):
     print("aprendizado4")
     #forecast = model.predict(future)
     Result = pd.DataFrame(data=forecast[['ds','yhat']]).tail()
-    Result.columns = ['created_at', 'field']
+    Result['ds'] = Result['ds'].dt.strftime('%Y-%m-%d %H:%M:%S')
+    
     field = json.dumps(Result.to_dict('records'))
     print("aprendizado5")
     return HttpResponse(field,content_type ="application/json")
