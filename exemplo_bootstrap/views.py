@@ -11,6 +11,7 @@ def home(request):
     return render(request, 'index.html')
 
 def aprendizado1(request):
+    print("aprendizado1")
     data = requests.get('https://api.thingspeak.com/channels/196384/field/1/?results=500').json()
     Map = list(map(lambda x: { "Date":  x["created_at"], "Values": x["field1"] }, data["feeds"]))
     feeds = json.dumps(Map)
