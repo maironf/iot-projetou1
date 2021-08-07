@@ -533,6 +533,7 @@ function getLastThingSpeakData(){
     function previsao1(){
       console.log("RODANDOOO");
       $.get('aprendizado/', function(data){
+        console.log("DADOOOSS")
         console.log(data);  
       });
     }
