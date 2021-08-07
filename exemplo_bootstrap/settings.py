@@ -25,8 +25,8 @@ SECRET_KEY = 'i7$w0kj@_*qo_(pz6y8tc=4*t4k@+^u85_n3-%ac#y*#v6xg04'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['iot-atividade2-mairon.herokuapp.com']
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['iot-projetou1.herokuapp.com']
+#ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
