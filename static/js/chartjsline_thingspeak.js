@@ -110,7 +110,7 @@ var config_line3 = {
   data: {
     labels: [],
     datasets: [{
-      label: 'Temperatura - Field 2',
+      label: 'Air Pressure - Field 3',
       data: [],
       borderWidth: 6,
       borderColor: 'rgba(255,0,0,0.85)',
@@ -121,7 +121,7 @@ var config_line3 = {
     responsive: true,
     title: {
       display: true,
-      text: 'Temperatura -Field 2'
+      text: 'Air Pressure - Field 3'
     },
     tooltips: {
       mode: 'index',
@@ -163,7 +163,7 @@ var config_line4 = {
   data: {
     labels: [],
     datasets: [{
-      label: 'Temperatura - Field 2',
+      label: 'Humidity - Field 4',
       data: [],
       borderWidth: 6,
       borderColor: 'rgba(255,0,0,0.85)',
@@ -174,7 +174,7 @@ var config_line4 = {
     responsive: true,
     title: {
       display: true,
-      text: 'Temperatura -Field 2'
+      text: 'Humidity - Field 4'
     },
     tooltips: {
       mode: 'index',
@@ -216,7 +216,7 @@ var config_line5 = {
   data: {
     labels: [],
     datasets: [{
-      label: 'MÉDIA Temperatura - Field 2',
+      label: 'Média Temperatura - Field 2',
       data: [],
       borderWidth: 6,
       borderColor: 'rgba(255,0,0,0.85)',
