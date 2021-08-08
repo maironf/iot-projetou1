@@ -431,7 +431,27 @@ function previsao1(){
 
     window.myLine7.update();
   });
+}
 
+function previsao2(){
+  console.log("RODANDOO2");
+  var ctx8 = document.getElementById('canvasprv2').getContext('2d');
+  window.myLine8 = new Chart(ctx8, config_line8);
+  $.get('aprendizado2/', function(data){
+    console.log("DADOOOSS2")
+    console.log(data);
+
+    for (d in data)
+    {
+      //variavel config_line2.data.datasets[0].data eh equivalente ao eixo y
+      config_line8.data.datasets[0].data.push(data[d].yhat);
+      //variavel config_line2.labels eh equivalente ao eixo x
+      var x_date = new Date(data[d].ds);
+      config_line8.data.labels.push(x_date);
+    }
+
+    window.myLine8.update();
+  });
 }
 
 /*

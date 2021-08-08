@@ -6,4 +6,5 @@ window.onload = function() {
   createMyLine25();
   createMyLine26();
   previsao1();
+  previsao2();
 };
