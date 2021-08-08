@@ -425,7 +425,7 @@ function previsao1(){
       //variavel config_line2.data.datasets[0].data eh equivalente ao eixo y
       config_line7.data.datasets[0].data.push(data[d].yhat);
       //variavel config_line2.labels eh equivalente ao eixo x
-      var x_date = new Date(feeds[d].ds);
+      var x_date = new Date(data[d].ds);
       config_line7.data.labels.push(x_date);
     }
 
