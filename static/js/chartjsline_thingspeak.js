@@ -370,6 +370,60 @@ var config_line7 = {
   }
 };
 
+var config_line8 = {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Previsão Temperatura - Field 2',
+      data: [],
+      borderWidth: 6,
+      borderColor: 'rgba(255,0,0,0.85)',
+      backgroundColor: 'transparent',
+    }]
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: true,
+      text: 'Previsão Temperatura - Field 2'
+    },
+    tooltips: {
+      mode: 'index',
+      intersect: false,
+    },
+    hover: {
+      mode: 'nearest',
+      intersect: true
+    },
+    scales: {
+      xAxes: [{
+        type: 'time',
+        ticks: {
+          minRotation: 90,
+          source: 'data',
+          autoSkip: true,
+          maxTicksLimit: 20  
+        },
+        distribution: 'series',
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: 'Data'
+        }
+      }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: 'Temperatura'
+        }
+      }]
+    }
+  }
+};
+
+
 /*cria o grafico myline2 com os ultimos valores enviados#
 * para o thingspeak
 */

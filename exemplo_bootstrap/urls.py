@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 from exemplo_bootstrap.views import aprendizado1
+from exemplo_bootstrap.views import aprendizado2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name="index.html")),
-    path('aprendizado/', aprendizado1)
+    path('aprendizado/', aprendizado1),
     path('aprendizado2/', aprendizado2)
 ]
